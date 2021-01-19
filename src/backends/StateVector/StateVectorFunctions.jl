@@ -391,4 +391,10 @@ module StateVectorFunctions
         res = cospi(thetapi) + im * sinpi(thetapi)
         return res
     end
+    
+    function _exp(theta::Complex{Float64})
+        thetapi = real(theta / pi / im)
+        res = cospi(thetapi) + im * sinpi(thetapi)
+        return res
+    end
 end
